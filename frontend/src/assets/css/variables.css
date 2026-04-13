@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #2d6cdf;
+    --primary-hover: #1a4fa0;
+    --bg-body: #f4f6fb;
+    --bg-surface: #ffffff;
+    --bg-card: #e9ecef;
+    --text-color: #222;
+    --text-light: #fff;
+    --shadow-soft: 0 2px 12px rgba(45,108,223,0.08);
+    --shadow-card: 0 2px 8px rgba(45,108,223,0.04);
+}

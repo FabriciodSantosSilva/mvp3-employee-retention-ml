@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferramenta para previsão de retenção</title>
+  
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!--script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script-->
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <header>
+    <!--h1 id="nav-home">Ferramenta para previsão de retenção</h1-->
+    <h1 id="nav-home" data-i18n="messages.title"></h1>
+    <nav>
+      <!--button onclick="changeLang('pb')">PB</button>
+      <button onclick="changeLang('en')">EN</button-->
+      <!--button id="nav-categorias">Categorias</button>
+      <button id="nav-gastos">Gastos</button>
+      <button id="nav-dashboard" class="active">Dashboard</button>
+      <button id="btn-logout" class="btn-logout">Sair</button-->
+        <div class="lang-dropdown">
+          <div class="lang-selected" id="langSelected">
+            <img id="langFlag" src="https://flagcdn.com/w20/br.png" />
+            <span id="langLabel">Português</span>
+          </div>
+
+          <div class="lang-options" id="langOptions">
+            <div class="lang-option" data-lang="pb">
+              <img src="https://flagcdn.com/w20/br.png" />
+              <span>Português</span>
+            </div>
+
+            <div class="lang-option" data-lang="en">
+              <img src="https://flagcdn.com/w20/us.png" />
+              <span>English</span>
+            </div>
+          </div>
+        </div>
+    </nav>
+  </header>
+    <div class="container">
+    <h1 data-i18n="messages.title"></h1>
+    
+
+    <form id="predictionForm">
+
+      <label data-i18n="labels.Education"></label>
+      <select name="Education" required>
+        <option value="">Selecione</option>
+        <option value="Bachelors" selected>Graduação</option>
+        <option value="Masters">Mestrado</option>
+        <option value="PhD">Doutorado</option>
+      </select>
+
+      <label data-i18n="labels.JoiningYear"></label>
+      <input 
+        type="number" 
+        name="JoiningYear" 
+        placeholder="Ex: 2017"
+        value="2017"
+        required 
+      />
+
+      <label data-i18n="labels.City"></label>
+      <select name="City" required>
+      <option value="">Selecione</option>
+      <option value="Bangalore" selected>Bangalore</option>
+      <option value="Pune">Pune</option>
+      <option value="New Delhi">Nova Delhi</option>
+    </select>
+
+      <label data-i18n="labels.PaymentTier"></label>
+      <input 
+        type="number" 
+        name="PaymentTier" 
+        placeholder="Ex: 1, 2 ou 3"
+        min="1" 
+        max="3"
+        value="2"
+        required 
+      />
+
+      <label data-i18n="labels.Age"></label>
+      <input 
+        type="number" 
+        name="Age" 
+        placeholder="Ex: 28" 
+        min="18" 
+        max="120"
+        value="28"
+        required 
+      />
+
+      <label data-i18n="labels.Gender"></label>
+      <select name="Gender" required>
+        <option value="">Selecione</option>
+        <option value="Male" selected>Masculino</option>
+        <option value="Female">Feminino</option>
+      </select>
+
+      <label data-i18n="labels.EverBenched"></label>
+      <select name="EverBenched" required>
+        <option value="">Selecione</option>  
+        <option value="No" selected>Não</option>
+        <option value="Yes">Sim</option>
+      </select>
+
+      <label data-i18n="labels.ExperienceInCurrentDomain"></label>
+      <input 
+        type="number" 
+        name="ExperienceInCurrentDomain" 
+        placeholder="Ex: 3"
+        
+        value="3"
+        required 
+      />
+
+      <button type="submit">Prever</button>
+    </form>
+
+    <div id="result" data-i18n="messages.initial"></div>
+    
+  </div>
+</body>
+</html>

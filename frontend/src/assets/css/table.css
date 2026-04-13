@@ -1,0 +1,68 @@
+form {
+    margin-bottom: 2rem;
+}
+form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+form input, form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    background: #2d6cdf;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+form button:hover {
+    background: #1a4fa0;
+}
+.list {
+    margin-bottom: 2rem;
+}
+.list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.list th, .list td {
+    padding: 0.7rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.list th {
+    background: #e3e9f7;
+}
+.list tr:hover {
+    background: #f6f8fa;
+}
+
+table {
+    width: 100%;
+    font-size: 0.97rem;
+    border-collapse: collapse;
+    word-break: break-word;
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+th, td {
+    padding: 0.6em 0.4em;
+    text-align: left;
+}
+th {
+    background: #e9ecef;
+    color: #2d6cdf;
+    font-weight: 600;
+}
+tr:nth-child(even) {
+    background: #f1f3f4;
+}

@@ -1,0 +1,32 @@
+Flask
+Flask-Cors
+flask-openapi3
+Flask-SQLAlchemy
+flask-openapi3-swagger
+flask-openapi3-redoc
+flask-openapi3-rapidoc
+flask-openapi3-rapipdf
+flask-openapi3-scalar
+flask-openapi3-elements
+nose2
+pydantic
+SQLAlchemy
+SQLAlchemy-Utils
+typing_extensions
+werkzeug
+
+# Adições para Autenticação Outlook/Microsoft
+msal
+requests
+Flask-Session
+
+# Adição para PostgreSQL
+psycopg2-binary
+
+#
+pandas
+scikit-learn
+pytest
+pytest-mock
+pytest-cov
+scikit-learn==1.6.1

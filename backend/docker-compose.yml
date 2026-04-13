@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  employee_retention_api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: employee_retention_api_container
+    ports:
+      - "5001:5000"
+    networks:
+      - app-network
+
+  employee_retention_frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    container_name: employee_retention_frontend_container
+    ports:
+      - "5000:80"
+    depends_on:
+      - employee_retention_api
+    networks:
+      - app-network
+
+networks:
+  app-network:

@@ -1,0 +1,23 @@
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(45,108,223,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.modal-content {
+    background: #fff;
+    padding: 2em 1.2em;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(45,108,223,0.12);
+    min-width: 460px;
+    max-width: 90vw;
+}
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 1em 0.5em;
+        min-width: 180px;
+    }
+}

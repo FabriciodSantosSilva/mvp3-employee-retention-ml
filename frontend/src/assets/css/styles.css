@@ -1,0 +1,9 @@
+/* styles.css */
+@import './variables.css';
+@import './base.css';
+@import './layout.css';
+@import './components.css';
+@import './modal.css';
+@import './table.css';
+@import './progressbar.css';
+@import './language.css';
